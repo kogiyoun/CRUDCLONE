@@ -1,0 +1,25 @@
+server:
+  port: 7793
+
+# database ?? ??
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_coding?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: user_coding
+    password: 1234
+
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  devtools:
+    livereload:
+      enabled: true
+    remote:
+      restart:
+        enabled: true
+
+
+
